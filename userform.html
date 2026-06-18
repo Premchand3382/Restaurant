@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>customer details</title>
+    <style>
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #abc {
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 500px;
+            height: 800px;
+            padding-left: 30px;
+            background-color: rgb(88, 48, 13);
+            color: white;
+        }
+        
+        input {
+            border-radius: 7px;
+        }
+        
+        .preference-row {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .preference-label {
+            width: 200px;
+        }
+        
+        .preferences {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 15px 30px;
+        }
+        
+        .preferences label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+
+
+</head>
+
+<div id="abc">
+
+
+    <body style="padding-left:500px; background-image: url('https://th.bing.com/th/id/OIP.s4CRfnxp_r_f3TiqMN9GBwHaEK?w=254&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3'); background-position: center; background-repeat: no-repeat; background-size: cover; ">
+        <div style="text-align: center;">
+            <h1 style="color:rgb(253, 191, 3);">User Information</h1>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+
+            <label>Name</label>
+            <div style="display: flex; flex-direction: row; padding-left: 148px;">
+                <input type="text" placeholder="enter your name"><br>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>Age</label>
+            <div style="display: flex; flex-direction: row; padding-left: 158px;">
+                <input type="text" placeholder="enter your age"><br>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>Phone number</label>
+            <div style="display: flex; flex-direction: row; padding-left: 92px;">
+                <input type="tel" placeholder="enter your aadhar number" pattern="[0-10]*" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')"><br>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>Email id</label>
+            <div style="display:flex; flex-direction: row; padding-left:132px;">
+                <input type="text" placeholder="enter your emial id"><br>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>House/Flat number:</label>
+            <div style="display:flex; flex-direction: row; padding-left:60px;">
+                <input type="text" placeholder="House/Flat number"><br>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>Street address</label>
+            <div style="display:flex; flex-direction: row; padding-left:100px;">
+                <input type="text" placeholder="Street address"><br>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>City</label>
+            <div style="display:flex; flex-direction: row; padding-left:160px;">
+                <input type="text" placeholder="city"><br>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>Pincode</label>
+            <div style="display:flex; flex-direction: row; padding-left:138px;">
+                <input type="text" placeholder="pincode"><br>
+            </div>
+        </div><br>
+        <div class="preference-row">
+            <div class="preference-label">
+                <label>Preference</label>
+            </div>
+
+            <div class="preferences">
+                <label><input type="checkbox"> Starters</label>
+                <label><input type="checkbox"> Fast Food</label>
+                <label><input type="checkbox"> Main Course (Veg)</label>
+                <label><input type="checkbox"> Main Course (Non-Veg)</label>
+                <label><input type="checkbox"> Salads</label>
+                <label><input type="checkbox"> Desserts</label>
+                <label><input type="checkbox"> Beverages</label>
+                <label><input type="checkbox"> Mocktails</label>
+                <label><input type="checkbox"> Chef's Special</label>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>Reservation</label>
+            <div style="display:flex; flex-direction: row; padding-left:138px;">
+                <input type="date" placeholder="date"><br>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>Number of guests</label>
+            <div style="display:flex; flex-direction: row; padding-left:90px;">
+                <input type="number" placeholder="no. of guest"><br>
+            </div>
+        </div><br>
+        <div style="display: flex; flex-direction: row;">
+            <label>Tabel number</label>
+            <div style="display:flex; flex-direction: row; padding-left:115px;">
+                <input type="number" placeholder="number"><br>
+            </div>
+        </div><br>
+
+        <div style="padding-bottom: 5px; text-align: center;">
+
+            <input id="final" type="button" value="Submit">
+
+
+            </form>
+        </div>
+</div>
+
+<script src="final.js"></script>
+</body>
